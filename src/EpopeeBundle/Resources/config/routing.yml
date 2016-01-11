@@ -1,0 +1,7 @@
+epopee_homepage:
+    path:     /
+    defaults: { _controller: EpopeeBundle:Default:index }
+
+epopee_book:
+    path:     /book/{book}
+    defaults: { _controller: EpopeeBundle:Default:book }
