@@ -5,3 +5,11 @@ epopee_homepage:
 epopee_book:
     path:     /book/{book}
     defaults: { _controller: EpopeeBundle:Default:book }
+
+epopee_reflection_add:
+    path:     /reflection/add
+    defaults: { _controller: EpopeeBundle:Reflection:add }
+
+epopee_reflection_index:
+    path:     /reflection
+    defaults: { _controller: EpopeeBundle:Reflection:index }

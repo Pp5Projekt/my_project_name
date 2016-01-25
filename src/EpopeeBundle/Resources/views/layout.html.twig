@@ -10,6 +10,7 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="{{asset('bundles/epopee/css/style.css')}}">
 
 		<title>Pan Tadeusz</title>
 	</head>	
@@ -20,14 +21,14 @@
 				<h2>Historia szlachecka z roku 1811 i 1812 we dwunastu księgach wierszem</h2>
 			</div>
 		</header>
-		<div class="container" id="menu">
+		<div class="container blocks_space" id="menu">
 			<div class="row">
 				{% block menu %}
 					<p>tu będzie menu</p>
 				{% endblock %}
 			</div>
 		</div>
-		<div class="container">
+		<div class="container blocks_space">
 			<div class="row">
 				<div id="sidebar" class="col-sm-12 col-lg-4">
 					{% block sidebar %}

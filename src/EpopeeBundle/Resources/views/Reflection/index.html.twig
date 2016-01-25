@@ -1,0 +1,26 @@
+{% extends "EpopeeBundle::bars.html.twig" %}
+
+{% block content %}
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Tytuł</th>
+				<th>Treść</th>
+				<th>Autor</th>
+				<th>Data</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for reflection in reflections %}
+				<tr>
+					<td>{{reflection.id}}</td>
+					<td>{{reflection.title}}</td>
+					<td>{{reflection.content}}</td>
+					<td>{{reflection.author}}</td>
+					<td>{{reflection.createdAt|date('d:m:Y')}}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+{% endblock %}
