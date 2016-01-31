@@ -1,0 +1,63 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wypożyczalnia samochodów</title>
+    <link href="{{asset('bundles/projekt/css/bootstrap.min.css')}}" rel="stylesheet">
+  </head>
+
+  <body>
+  {% block menu %}
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="{{path('projekt_homepage')}}">Główna</a></li>
+			      <li role="presentation"><a href="{{path('projekt_category')}}">Kategorie</a></li>
+            <li role="presentation"><a href="#">Rejestracja</a></li>
+            <li role="presentation"><a href="#">Logowanie</a></li>
+          </ul>
+        </nav>
+        <h3><a href="{{path('projekt_homepage')}}"><img id="logo" src="{{asset('bundles/projekt/css/images/logo.png')}}"></a></h3>
+      </div>
+            <div class="row">
+   {% endblock %}
+            {% block content %}
+
+            {% block glowna %}
+              <p>tekst</p>
+            {% endblock %}
+            
+                    {% block samochodyWszystkie %}
+        <center>
+          <p>Tutaj będzie zawartość strony głównej</p>
+          </center>
+        {% endblock %}
+
+        {% block najczesciejWypozyczane %}
+          <center>
+            <p>Samochody najczęściej wypożyczane</p>
+          </center>
+        {% endblock %}
+  
+        {% block samochodyOceniane %}
+          <center>
+            <p>Najczęściej oceniane</p>
+          </center>
+        {% endblock %}
+            {% endblock %}
+
+
+
+
+      </div>
+            <footer class="footer">
+    <center>
+        <p>&copy; Danisz Mydlarz<br/>
+    Sebastian Kuśnierz</p>
+    </center>
+      </footer>
+</div>
+    </div>

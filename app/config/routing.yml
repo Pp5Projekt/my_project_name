@@ -1,3 +1,7 @@
+projekt:
+    resource: "@ProjektBundle/Resources/config/routing.yml"
+    prefix:   /pb
+
 epopee:
     resource: "@EpopeeBundle/Resources/config/routing.yml"
     prefix:   /pt

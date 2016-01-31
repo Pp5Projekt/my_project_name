@@ -1,0 +1,57 @@
+{% extends "ProjektBundle::layout.html.twig" %}
+
+{% block content %}
+ <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="index.php">Główna</a></li>
+			<li role="presentation" class="active"><a href="categories.php">Kategorie</a></li>
+            <li role="presentation"><a href="#">Rejestracja</a></li>
+            <li role="presentation"><a href="#">Logowanie</a></li>
+          </ul>
+        </nav>
+        <h3><a href="index.php"><img id="logo" src="css/images/logo.png"></a></h3>
+      </div>
+
+
+<div class="row">
+	  <div class="row marketing">
+        <div class="col-lg-12">
+		<center>
+          <h2>Kategrie:</h2>
+          <p>Wybierz kategorię, która Cię interesuje</p>
+		 </center>
+		</div>
+	</div>
+	  
+	  <div class = "col-sm-4 col-md-12">
+      <a href = "#" class = "thumbnail">
+         <img src = "http://www.kimballstock.com/pix/AUT/06/AUT-06-IZ0027-01P.JPG" alt = "Generic placeholder thumbnail">
+           <p>Sportowe</p>
+                 
+        </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-12">
+      <a href = "#" class = "thumbnail">
+         <img src = "http://www.everythingmotoring.com/DataEditorUploads/BMW%20X6-Northern-Ireland.jpg" alt = "Generic placeholder thumbnail">
+           <p>Jeepy</p>
+                 
+        </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-12">
+      <a href = "#" class = "thumbnail">
+         <img src = "http://www.auto8.pl/images/volkswagen-passat-bluemotion_black_12.jpg" alt = "Generic placeholder thumbnail">
+           <p>Sedan</p>
+                 
+        </a>
+   </div>
+   
+   
+
+      </div>
+
+    </div>
+{% endblock %}

@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new HelloBundle\HelloBundle(),
             new EpopeeBundle\EpopeeBundle(),
+            new ProjektBundle\ProjektBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

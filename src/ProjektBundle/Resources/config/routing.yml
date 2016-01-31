@@ -1,0 +1,8 @@
+projekt_homepage:
+    path:     /
+    defaults: { _controller: ProjektBundle:Default:index }
+
+projekt_category:
+    path:     /category
+    defaults: { _controller: ProjektBundle:Default:category }
+
